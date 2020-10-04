@@ -9,17 +9,19 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <title>Pteer Hotels Inc</title>
+    <title>Peter Hotels Inc</title>
   </head>
 
-<title>Guiaaaa Hoteles</title>
-  <body>
+<title>Guia Hoteles</title>
+<body>
+
     <div class="jumbotron">
       <h1>HOTELES</h1>
     </div>
 
-    <div class="container">
-      <div class="row">
+    <div class="container-fluid">
+
+      <div class="row alert alert-warning" role="alert">
         <div class="col-sm-4">
           <p>
             <h3>Como Funciona ?</h3>
@@ -27,7 +29,7 @@
           </p>
         </div>
    
-        <div class="col-sm-4">
+        <div class="col-sm-4 ">
           <p>
             <h3>Donde puedo Reservar ?</h3>
             <p>Elige la ciudad qe te interese y luego realiza la reserva</p>
@@ -40,59 +42,35 @@
             <p>Utiliza cualquier forma de pago</p>
           </p>
         </div>
+      </div>
+
 
       <div class="d-flex flex-wrap flex-row-reverse">
-          <div class="col-sm-3" 
+          <div class="card-hotel">
             <p>
               <h4>Hotel Barcelona</h4>
               <p>Ubicado en pleno centro de la ciudad</p>
               <button class="btn">Reservar</button>
             </p>
           </div>
-          <div class="col-sm-3">
+
+          <div class="card-hotel">
             <p>
               <h4>Hotel Buenos Aires</h4>
-              <p>Apleno tango y milonga</p>
+              <p>Apleno tango y milonga, la ciudad del tango y de gardel, gran metropolis Latino americana</p>
               <button class="btn btn-success">Reservar</button>
             </p>
           </div>
-          <div class="col-sm-3">
+
+          <div class="card-hotel">
             <p>
               <h4>Hotel Lima</h4>
               <p>Imposible no perderselo</p>
               <button class="btn">Reservar</button>
             </p>
           </div>
-          <div class="col-sm-3">
 
-            <p>
-              <h4>Hotel Caracass</h4>
-              <p>Viva Chavez !</p>
-              <button class="btn">Reservar</button>
-            </p>
-          </div>
-          <div class="col-sm-3">
-            <p>
-              <h4>Hotel Caracass</h4>
-              <p>Viva Chavez !</p>
-              <button class="btn btn-warning">Reservar</button>
-            </p>
-          </div>
-          <div class="col-sm-3">
-            <p>
-              <h4>Hotel Caracass</h4>
-              <p>Viva Chavez !</p>
-              <button class="btn">Reservar</button>
-            </p>
-          </div>
-          <div class="col-sm-3">
-            <p>
-              <h4>Hotel Caracass</h4>
-              <p>Viva Chavez !</p>
-              <button class="btn btn-primary">Reservar</button>
-            </p>
-          </div>
-          <div class="col-sm-3">
+          <div class="card-hotel">
             <p>
               <h4>Hotel Caracass</h4>
               <p>Viva Chavez !</p>
@@ -101,11 +79,43 @@
           </div>
         </div>
 
+          <div class="d-flex flex-wrap flex-row-reverse">
+          <div class="card-hotel">
+            <p>
+              <h4>Hotel Caracass</h4>
+              <p>Viva Chavez !</p>
+              <button class="btn btn-warning">Reservar</button>
+            </p>
+          </div>
+
+          <div class="card-hotel">
+            <p>
+              <h4>Hotel Caracass</h4>
+              <p>Viva Chavez !</p>
+              <button class="btn">Reservar</button>
+            </p>
+          </div>
+
+          <div class="card-hotel">
+            <p>
+              <h4>Hotel Caracass</h4>
+              <p>Viva Chavez !</p>
+              <button class="btn btn-primary">Reservar</button>
+            </p>
+          </div>
+
+          <div class="card-hotel">
+            <p>
+              <h4>Hotel Caracass</h4>
+              <p>Viva Chavez !</p>
+              <button class="btn">Reservar</button>
+            </p>
+          </div>
+        </div>
     </div>   
         
 
-
-<!-- FOOTER TIMER -->
+      <!-- FOOTER TIMER -->
 
 <footer>
   <div class="row">
@@ -119,24 +129,22 @@
     </div>
 
         <!-- ADDRESS -->
-    <div class="col-sm-4">
-      <addres>Camino Del Grillo 666,San Benito,Argentina
-              +598165878945
-              <p>Contacto:pedroayz@gmail.com</p>
+    <div class="col-sm-4 d-flex flex-column align-items-center">
+      <addres>
+        <h4>Oficina Central</h4>
+        <p>Camino Del Grillo 666,San Benito,Argentina</p>
+        <p>+598165878945</p>
+        <p>Contacto:pedroayz@gmail.com</p>
       </addres>
     </div>
 
-
         <!-- SECOND COLUMN DIV -->
-    <div class="col-sm-4 d-flex flex-column-reverse">
+    <div class="col-sm-4 d-flex flex-column align-items-center">
       <a href="https://www.facebook.com">Ofertas</a>
       <a href="https://www.Tweeter.com">Partners</a>
       <a href="https://www.Instagram.com">Trabaje con nosotros</a>
       <a href="https://www.Google.com">Contacto</a>
     </div>
-  </div>
-
-
 
 </footer>
 
@@ -146,6 +154,6 @@
     <script src="/node_modules/popper.js/dist/popper.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-  </body>
+</body>
 
 </html>
