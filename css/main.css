@@ -50,6 +50,15 @@ border-radius: 10%;
 
 .oi{
 
-    margin-right: 2%;
     color: snow;
+    margin-right: 2%;
 }
+
+form{
+    margin: 2%;
+}
+
+.btn-outline-primary {
+    align-self: flex-start;
+}
+
