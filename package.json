@@ -1,5 +1,5 @@
 {
-  "name": "ghoteles",
+  "name": "GHoteles",
   "version": "1.0.0",
   "description": "mi primer web hoteles",
   "main": "index.html",
@@ -18,9 +18,11 @@
     "lite-server": "^2.5.4"
   },
   "dependencies": {
-    "bootstrap": "^4.5.2",
-    "jquery": "^3.5.1",
+     "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
     "open-iconic": "^1.1.1",
-    "popper.js": "^1.16.1"
+    "bootstrap": "^4.5.2"
+   
+ 
   }
 }
