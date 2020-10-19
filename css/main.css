@@ -90,7 +90,7 @@ border-radius: 3%;
 
 
 
-/* NAVBAR */
+    /* NAVBAR */
 
 header {
     width: 100%;
@@ -199,7 +199,7 @@ nav ul li a {
     .menu-icon {
           display: block;
     }
-
+}
 
 
 /* FOOTER */
@@ -405,9 +405,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-}
-
 /*************footer End*****************/
-
 
 
