@@ -105,6 +105,7 @@ header {
     font-size: 20px;
     line-height: 30px;
     text-align: justify;
+  
 }
 
 .logo {
@@ -112,10 +113,11 @@ header {
     position: fixed;
     float: left;
     margin: 16px 46px;
-    color: #fff;
+    color: #fbfbfd;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
     letter-spacing: 2px;
+    transition: 1s;
 }
 
 nav {
@@ -142,6 +144,8 @@ nav ul {
 
 nav.black ul {
     background:#0e0622;
+   
+ 
 }
 
 nav ul li {
@@ -168,12 +172,21 @@ nav ul li a {
     display: none;
 }
 
+.logo-scrolled{
+    color: grey;
+    font-size: 200%;
+    transition: 1s;
+    
+
+}
+
 @media(max-width: 786px) {
 
     .logo {
           position: fixed;
           top: 0;
-          margin-top: 16px;
+          margin-top: 20px;
+          transition: 1s;
     }
 
     nav ul {
@@ -183,6 +196,8 @@ nav ul li a {
 
     nav.black ul {
           background: #000;
+          transition: 1s;
+        
     }
 
     .showing {

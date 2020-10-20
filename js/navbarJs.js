@@ -9,9 +9,11 @@ $(document).ready(function() {
 $(window).on("scroll", function() {
     if($(window).scrollTop()) {
           $('nav').addClass('black');
+          $('.logo').addClass('logo-scrolled');
     }
 
     else {
           $('nav').removeClass('black');
+          $('.logo').removeClass('logo-scrolled');
     }
 })

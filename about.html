@@ -17,23 +17,27 @@
 
     <!-- NAVABAR -->
 
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a href="a" class="navbar-brand">Hoteles</a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportContent">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse"  id="navbarSupportContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item "><a href="/index.html" class="nav-link">Home</a></li>
-            <li class="nav-item active"><a href="" class="nav-link">Nosotros</a></li>
-            <li class="nav-item"><a href="/precios.html" class="nav-link">Precios</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Terminos y condiciones</a></li>
-            <li class="nav-item"><a href="/contacto.html" class="nav-link">Contacto</a></li>
-          </ul>
-        </div>
-      </nav>
+    <div class="wrapper nav nav-bar">
+      <header>
+         <nav>
+            <div class="menu-icon">
+               <i class="fa fa-bars fa-2x"></i>
+            </div>
+            <div class="logo">
+               LOGO
+            </div>
+            <div class="menu">
+               <ul>
+                  <li><a href="/index.html">Home</a></li>
+                  <li><a href="/about.html">About</a></li>
+                  <li><a href="/precios.html">Buy</a></li>
+                  <li><a href="/contacto.html">Contact</a></li>
+             
+               </ul>
+            </div>
+         </nav>
+        </header>                       
+    </div>
 
       <!-- JUMBOTRON -->
 
@@ -42,12 +46,12 @@
     </div>
 
     <div class="container">
-      <nav aria-label="breadcrumb">
+      <div aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item " aria-current="page"><a href="/index.html">Home</a> </li>
           <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
         </ol>
-      </nav> 
+      </div> 
     </div>
 
 
@@ -171,6 +175,7 @@
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/node_modules/popper.js/dist/popper.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/js/navbarJs.js"></script>
 
 </body>
 
