@@ -108,6 +108,10 @@ header {
   
 }
 
+a{
+
+    transition: 0.5s;
+}
 .logo {
     line-height: 60px;
     position: fixed;
@@ -125,14 +129,17 @@ nav {
     width: 100%;
     line-height: 60px;
     z-index: 1000;
-    color: black;
+   
     opacity: 0.8;
+
+    
 }
+
 
 nav ul {
     line-height: 60px;
     list-style: none;
-    background: rgba(0, 0, 0, 0);
+  
     overflow: hidden;
     color: black;
     padding: 0;
@@ -142,10 +149,33 @@ nav ul {
     transition: 1s;
 }
 
-nav.black ul {
-    background:#0e0622;
-   
- 
+.nav-scrolled {
+    background-color: black;
+    height: 22%;
+    transition: 2s;
+    opacity: 0.8;
+    transition: 1s;
+
+}
+
+.navbar-toggler-icon  {
+
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+}
+
+
+.logo-scrolled{
+
+    font-size: 100%;
+    transition: 1s;
+    
+
 }
 
 nav ul li {
@@ -155,7 +185,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #ebeef5;
+    color: transparent;
     font-size: 150%;
     border-color: #000;
 }
@@ -172,13 +202,7 @@ nav ul li a {
     display: none;
 }
 
-.logo-scrolled{
-    color: grey;
-    font-size: 200%;
-    transition: 1s;
-    
 
-}
 
 @media(max-width: 786px) {
 
@@ -196,12 +220,12 @@ nav ul li a {
 
     nav.black ul {
           background: #000;
-          transition: 1s;
+
         
     }
 
     .showing {
-          max-height: 34em;
+          max-height: 200%;
     }
 
     nav ul li {

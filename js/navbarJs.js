@@ -8,12 +8,19 @@ $(document).ready(function() {
 
 $(window).on("scroll", function() {
     if($(window).scrollTop()) {
-          $('nav').addClass('black');
-          $('.logo').addClass('logo-scrolled');
+          $('.fixed-top').removeClass('.bg-transparent');
+          $('.fixed-top').addClass('nav-scrolled');
+          $('.fixed-top').addClass('bg-dark');     
+          $('.fixed-top').removeClass('bg-transparent');
+          $('a').addClass('.btn btn-light btn-lg ');
+          
+       
     }
 
     else {
-          $('nav').removeClass('black');
-          $('.logo').removeClass('logo-scrolled');
+          $('.fixed-top').removeClass('nav-scrolled');
+          $('.fixed-top').addClass('bg-transparent');
+          $('a').removeClass('.btn btn-light btn-lg ');
+       
     }
 })
