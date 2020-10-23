@@ -110,7 +110,10 @@ header {
 
 a{
 
-    transition: 0.5s;
+    transition: 0.2s;
+    
+    opacity: 0.8;
+    text-align: center;
 }
 .logo {
     line-height: 60px;
