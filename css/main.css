@@ -1,10 +1,4 @@
-.jumbotron{
 
-    background-color: rgb(224, 218, 211);
-    color:black;
-
-    margin-top: 0%;
-}
 
 
 
@@ -110,8 +104,7 @@ header {
 
 a{
 
-    transition: 0.2s;
-    
+    transition: 0.45s;
     opacity: 0.8;
     text-align: center;
 }
@@ -448,5 +441,4 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*************footer End*****************/
-
 
