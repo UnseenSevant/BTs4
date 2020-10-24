@@ -8,7 +8,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
+      <script src="/node_modules/jquery/dist/jquery.js"></script>
+      <script src="/node_modules/popper.js/dist/popper.js"></script>
+      <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+      <script src="/js/navbarJs.js"></script>
+    
 
       <!-- OPEN ICONIC -->
       <link rel="stylesheet" href="/node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
@@ -40,28 +47,21 @@
       </div>
     </nav>    
   </header>   
-
-
-                                      <!-- ALERT -->
-        <div class="alert alert-warning alert-dismissible fade show " role="alert">
-          <strong> Nuevos Viajes !</strong> Entra en nuestra nueva seccion de viajes !
-            <button type="button" class="close" data-dismiss='alert' aria-label="close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-
+                                    <!-- ALERT -->
+      <div class="alert alert-warning alert-dismissible fade show " role="alert">
+        <strong> Nuevos Viajes !</strong> Entra en nuestra nueva seccion de viajes !
+          <button type="button" class="close" data-dismiss='alert' aria-label="close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
                                      <!-- ALERT -->
-           <div class="alert alert-dark alert-dismissible fade show " role="alert">
-            <strong><h4> <span class=" badge badge-dark">Nuevas Ofertas</span>  !</strong></h4>Nuevas ofertas y sorteos !
-              <button type="button" class="close" data-dismiss='alert' aria-label="close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-          </div>
-
-
-
-          <!-- ACORDEON -->
-
+      <div class="alert alert-dark alert-dismissible fade show " role="alert">
+      <strong><h4> <span class=" badge badge-dark">Nuevas Ofertas</span>  !</strong></h4>Nuevas ofertas y sorteos !
+        <button type="button" class="close" data-dismiss='alert' aria-label="close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+                                    <!-- ACORDEON -->
   <div class="accordion" id="accordionExample">
     <div class="card">
       <div class="card-header" id="headingOne">
@@ -109,10 +109,9 @@
     </div>
   </div>
                                     <!-- TOP CARDS -->
-
-    <div class="container-fluid ">
-
-      <div class="row alert alert-warning " role="alert">
+  <div class="container-fluid ">
+    
+    <div class="row alert alert-warning " role="alert">
         <div class="col-sm-3">
           <p>
             <h2><span class="badge badge-primary">Como Funciona ?</span> </h3>
@@ -143,226 +142,220 @@
             <p>Encuentra las mejores ofertas en nuestra Web</p>
           </p>
         </div>
-
-      </div>
-
-                                    <!-- TOP IMAGE -->
-                                    <!-- TOP IMAGE -->
-
-      <div class="d-flex flex-wrap flex-row card-hotel card-img-top">
-        <img src="/images/bech1.jpg" alt="" class="img-fluid card-hotel" style="opacity: 0.8;width: 50%;opacity: 0.8;">
-        <img src="/images/bech2.jpg" alt="" class="img-fluid card-hotel" style="opacity: 0.8;width: 50%;opacity: 0.8;">
-     </div>
-
-                                  <!-- 4 GROUP CARD CONTEINER -->
-                                  <!-- 4 GROUP CARD CONTEINER -->
-
-      <div class="d-flex flex-wrap flex-row">
-
-                                    <!-- CARD ONE -->
-                                    <!-- CARD ONE -->
-
-        <div class="card card-hotel d-flex flex-column justify-content-between ">
-          <div class="card-header">
-            <h6 class="card-subtitle text-muted"><span class="oi oi-badge"></span>ESPAÑA</h6>
-          </div>                  
-                                        <!-- CARD BODY -->    
-                                          <!-- CARD IMG -->
-
-            <img src="/images/ho1.jpg" alt="" class="card-img-top">           
-            <div class="card-header">               
-             <h5 class="card-title" data-toggle="tooltip" title="Oferta especial !" >Hotel Barcelona</h5>
-         
-              <p class="card-text">Ubicado en pleno centro de la ciudad A POCOS METROS DE LA PLAYA</p>
-            </div>
-                                          <!-- CARD BUTTON -->
-            <div>
-              <button class="btn btn-reserva"  data-toggle="modal" data-target="#Reserva">
-                <span class="oi oi-media-play"> </span>
-                Reservar
-              </button>   
-            </div>
-          </div>
-    
-                                      <!-- CARD TWO -->
-                                      <!-- CARD TWO -->
-
-        <div class="card card-hotel d-flex flex-column justify-content-between ">
-          <div class="card-header">
-            <h6 class="card-subtitle text-muted"><span class="oi oi-badge"></span>ARGENTINA</h6>
-          </div>
-
-                                              <!-- CARD IMG -->
-          <img src="/images/cards1.jpg" alt="" class="card-img-top">   
-
-                                            <!-- CARD BODY -->
-            <div class="card-body">
-                <h5 class="card-title"> Buenos Aires</h5>               
-                <p class="card-text">Un de las grandes capitales de la musica y el la danza Latino Americanas</p>
-            </div>
-                                          <!-- CARD BUTTON -->
-            <div>
-              <button class="btn btn-reserva"  data-toggle="modal" data-target="#Reserva">
-                <span class="oi oi-media-play"> </span>
-                Reservar
-              </button>   
-            </div>
-          </div>
-                                    <!-- CARD THREE -->
-                                    <!-- CARD THREE -->
-
-    <div class="card card-hotel d-flex flex-column justify-content-between ">
-      <div class="card-header">
-        <h6 class="card-subtitle text-muted"><span class="oi oi-badge"></span>BRASIL</h6>
-      </div>
-
-                                       <!-- CARD IMG -->
-      <img src="/images/brasil1.jpg" alt="" class="card-img-top">     
-
-                                        <!-- CARD BODY -->
-        <div class="card-body">
-         
-            <h5 class="card-title">Rio de Janeiro</h5>
-            <p class="card-text">El carnaval mas grande del mundo</p>
-        </div>
-                                      <!-- CARD BUTTON -->
-        <div>
-          <button class="btn btn-reserva">
-            <span class="oi oi-media-play"> </span>
-            Reservar
-          </button>   
-        </div>
-      </div>
-                                      <!-- CARD FOUR -->
-                                      <!-- CARD FOUR -->
-      <div class="card card-hotel d-flex flex-column justify-content-between ">
-      <div class="card-header">
-        <h6 class="card-subtitle text-muted"><span class="oi oi-badge"></span>CHILE</h6>
-      </div>
-                                        <!-- CARD IMG -->
-      <img src="/images/chile.jpg" alt="" class="card-img-top">  
-                                        <!-- CARD BODY -->
-        <div class="card-body">
-          
-            <h5 class="card-title" data-toggle="tooltip" title="Oferta especial">Santiago De Chile</h5>
-           
-            <p class="card-text">El pise qur recorre con su pisaje, todo el meridiano latinoamericano</p>
-        </div>
-                                      <!-- CARD BUTTON -->
-        <div>
-          <button class="btn btn-reserva"  data-toggle="modal" data-target="#Reserva">
-            <span class="oi oi-media-play"> </span>
-            Reservar
-          </button>   
-        </div>
-      </div>
-</div>     
-                                  <!-- 2 GROUP CARD CONTEINER -->
-                                  <!-- 2 GROUP CARD CONTEINER -->
-    <div class="d-flex flex-wrap flex-row-reverse">
-
-                                        <!-- CARD ONE -->
-                                        <!-- CARD ONE -->
-
-    <div class="card card-hotel d-flex flex-column justify-content-between ">
-      <div class="card-header">
-        <h6 class="card-subtitle text-muted"><span class="oi oi-badge"></span>VENEZUELA</h6>
-      </div>                                      
-                                        <!-- CARD BODY -->
-        <img src="/images/venezuela.jpg" alt="" class="card-hotel-top">
-        <div class="card-header">
-            <h5 class="card-title">Caracas</h5>
-                                       <!-- CARD IMG -->
-         
-            <p class="card-text">Viva Chaves !</p>
-        </div>
-                                      <!-- CARD BUTTON -->
-        <div>
-          <button class="btn btn-reserva" data-toggle="modal" data-target="#Reserva">
-            <span class="oi oi-media-play"> </span>
-            Reservar
-          </button>   
-        </div>
-      </div>
-      
-                                        <!-- CARD TWO -->
-                                        <!-- CARD TWO -->
-
-    <div class="card card-hotel d-flex flex-column justify-content-between " >
-      <div class="card-header">
-        <h6 class="card-subtitle text-muted"><span class="oi oi-badge"></span>URUGUAY</h6>
-      </div>
-                                        
-                                        <!-- CARD BODY -->
-                                         <!-- CARD IMG -->
-          <img src="/images/uruguay.jpg" alt="" class="card-hotel">
-        <div class="card-body">
-            <h5 class="card-title">Punta Del Este</h5>
-            <p class="card-text">La perla de rio de la plata</p>
-        </div>
-                                      <!-- CARD BUTTON -->
-        <div>
-            <button type="button" class="btn btn-reserva" data-toggle="modal" data-target="#Reserva" data-whatever="@fat">
-            
-            <span class="oi oi-media-play"></span>
-            Reserva
-          </button>
-        </div>
     </div>
-   
-</div>     
-<!-- TOOLTIPS -->
-<!-- TOOLTIPS -->   
 
-<script>
-
-</script>
-
-
-                                          <!-- MODAL -->
-
-<div class="modal fade" id="Reserva" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
- 
-  <div class="modal-dialog">
-   
-    <div class="modal-content">
-      
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Envianos tu Reserva !</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+                     <!-- TOP CARRUSEL -->
+                     <!-- TOP CARRUSEL -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/images/bech1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/images/bech2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/images/brasil1.jpg" class="d-block w-100" alt="...">
+        </div>
       </div>
+    </div>
 
-      <div class="modal-body col-form-label badge badge-warning ">
-        <form>
 
-          <div class="form-group ">
-            <label for="recipient-name" class="col-form-label badge badge-warning"><h7>Nombre y Apellido</h7></label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
+                                <!-- CAROUSEL BUTTONS NEXT & PREV -->
+                                <!-- CAROUSEL BUTTONS NEXT & PREV -->
+<!--     <a
+    class="carousel-control-next" 
+    href="#carouselControl"
+    role="button"
+    data-slide="next"
+    aria-hidden="true"
+    >
+      <span class="carousel-control-next-icon">Dame - ! </span>
+      <span class="sr-only"> Dame + !</span>
+    </a>
 
-          <div class="form-group">
-            <label for="recipient-name" class="col-form-label">E-mail</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-          <div class="form-group">
-            <label for="message-text" class="col-form-label">Message:</label>
-            <textarea class="form-control" id="message-text"></textarea>
-          </div>
-
-        
-        </form>
-      </div>
+    
+    <a
+    class="carousel-control-prev" 
+    href="#carouselControl"
+    role="button"
+    data-slide="prev"
+    aria-hidden="true"
+    >
+    <span class="carousel-control-prev-icon">Dame - ! </span>
+    <span class="sr-only"> Dame + !</span>
+  </a>
+ -->
 
     </div>
   </div>
-</div>
+ 
+                                  <!-- 4 GROUP CARD CONTEINER -->
+                                  <!-- 4 GROUP CARD CONTEINER -->
+    <div class="d-flex flex-wrap flex-row">
+                                  <!-- CARD ONE -->
+                                  <!-- CARD ONE -->
+      <div class="card card-hotel d-flex flex-column justify-content-between ">
+        <div class="card-header">
+          <h6 class="card-subtitle text-muted"><span class="oi oi-badge"></span>ESPAÑA</h6>
+        </div>                  
+                                        <!-- CARD BODY -->    
+                                        <!-- CARD IMG -->
 
+          <img src="/images/ho1.jpg" alt="" class="card-img-top">           
+          <div class="card-header">               
+            <h5 class="card-title" data-toggle="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus qui corrupti atque voluptates ratione odio labore vitae consequatur error in hic earum nisi unde, soluta porro blanditiis minima! Error, delectus." >Hotel Barcelona</h5>
+        
+            <p class="card-text">Ubicado en pleno centro de la ciudad A POCOS METROS DE LA PLAYA</p>
+          </div>
+                                    <!-- CARD BUTTON -->
+          <div>
+            <button class="btn btn-reserva"  data-toggle="modal" data-target="#Reserva">
+              <span class="oi oi-media-play"> </span>
+              Reservar
+            </button>   
+          </div>
+        </div>
+  
+                                    <!-- CARD TWO -->
+                                    <!-- CARD TWO -->
+
+      <div class="card card-hotel d-flex flex-column justify-content-between ">
+        <div class="card-header">
+          <h6 class="card-subtitle text-muted"><span class="oi oi-badge"></span>ARGENTINA</h6>
+        </div>
+
+                                            <!-- CARD IMG -->
+        <img src="/images/cards1.jpg" alt="" class="card-img-top">   
+
+                                          <!-- CARD BODY -->
+          <div class="card-body">
+              <h5 class="card-title"> Buenos Aires</h5>               
+              <p class="card-text">Un de las grandes capitales de la musica y el la danza Latino Americanas</p>
+          </div>
+                                        <!-- CARD BUTTON -->
+          <div>
+            <button class="btn btn-reserva"  data-toggle="modal" data-target="#Reserva">
+              <span class="oi oi-media-play"> </span>
+              Reservar
+            </button>   
+          </div>
+        </div>
+                                  <!-- CARD THREE -->
+                                  <!-- CARD THREE -->
+
+      <div class="card card-hotel d-flex flex-column justify-content-between ">
+        <div class="card-header">
+          <h6 class="card-subtitle text-muted"><span class="oi oi-badge"></span>BRASIL</h6>
+        </div>
+
+                                        <!-- CARD IMG -->
+        <img src="/images/brasil1.jpg" alt="" class="card-img-top">     
+
+                                          <!-- CARD BODY -->
+          <div class="card-body">
+          
+              <h5 class="card-title">Rio de Janeiro</h5>
+              <p class="card-text">El carnaval mas grande del mundo</p>
+          </div>
+                                        <!-- CARD BUTTON -->
+          <div>
+            <button class="btn btn-reserva">
+              <span class="oi oi-media-play"> </span>
+              Reservar
+            </button>   
+          </div>
+        </div>
+                                        <!-- CARD FOUR -->
+                                        <!-- CARD FOUR -->
+        <div class="card card-hotel d-flex flex-column justify-content-between ">
+        <div class="card-header">
+          <h6 class="card-subtitle text-muted"><span class="oi oi-badge"></span>CHILE</h6>
+        </div>
+                                          <!-- CARD IMG -->
+        <img src="/images/chile.jpg" alt="" class="card-img-top">  
+                                          <!-- CARD BODY -->
+          <div class="card-body">
+            
+              <h5 class="card-title" data-toggle="tooltip" title="Oferta especial">Santiago De Chile</h5>
+            
+              <p class="card-text">El pise qur recorre con su pisaje, todo el meridiano latinoamericano</p>
+          </div>
+                                        <!-- CARD BUTTON -->
+          <div>
+            <button class="btn btn-reserva"  data-toggle="modal" data-target="#Reserva">
+              <span class="oi oi-media-play"> </span>
+              Reservar
+            </button>   
+          </div>
+        </div>
+    </div>     
+                                  <!-- 2 GROUP CARD CONTEINER -->
+                                  <!-- 2 GROUP CARD CONTEINER -->
+
+    <div class="d-flex flex-wrap flex-row-reverse">
+
+                                          <!-- CARD ONE -->
+                                          <!-- CARD ONE -->
+      <div class="card card-hotel d-flex flex-column justify-content-between ">
+        <div class="card-header">
+          <h6 class="card-subtitle text-muted"><span class="oi oi-badge"></span>VENEZUELA</h6>
+        </div>                                      
+                                          <!-- CARD BODY -->
+          <img src="/images/venezuela.jpg" alt="" class="card-hotel-top">
+          <div class="card-header">
+              <h5 class="card-title">Caracas</h5>
+                                        <!-- CARD IMG -->
+          
+              <p class="card-text">Viva Chaves !</p>
+          </div>
+                                        <!-- CARD BUTTON -->
+          <div>
+            <button class="btn btn-reserva" data-toggle="modal" data-target="#Reserva">
+              <span class="oi oi-media-play"> </span>
+              Reservar
+            </button>   
+          </div>
+      </div>
+        
+                                          <!-- CARD TWO -->
+                                          <!-- CARD TWO -->
+
+      <div class="card card-hotel d-flex flex-column justify-content-between " >        
+          <div class="card-header">
+            <h6 class="card-subtitle text-muted"><span class="oi oi-badge"></span>URUGUAY</h6>
+          </div>                                  
+                                            <!-- CARD BODY -->
+                                            <!-- CARD IMG -->
+          <img src="/images/uruguay.jpg" alt="" class="card-hotel">
+          <div class="card-body"  data-toggle="popover" data-title="please save me !">
+                <h5 class="card-title">Punta Del Este</h5>
+                <p class="card-text">La perla de rio de la plata</p>
+          </div>
+                                          <!-- CARD BUTTON -->
+          <div>
+            <button type="button" class="btn btn-reserva"
+             
+            data-toggle="popover" 
+            data-title="LOREM PLZ RUN NOW !"
+            data-content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet distinctio dicta laudantium nesciunt quo dolore optio facere adipisci natus quia atque modi fugit, eveniet praesentium dignissimos, nobis, 
+            tempora cumque vitae.Maiores, quos nostrum. Dolorem quia error nemo enim soluta possimus vel doloremque expedita dolore quo? Repellat, vitae numquam minus, commodi deserunt voluptatum enim, velit expedita reprehend"
+            data-whatever="@fat">    
+            <span class="oi oi-media-play"></span>  
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloribus ea dolores eius deserunt adipisci ipsa temporibus, non nihil! Id architecto, est asperiores incidunt officiis accusamus rem quae iste. Placeat.
+            </button>
+          </div>
+
+      </div>
+      
+      <!-- 2 CARDS CONTAINER ENDS -->
+    </div>
+
+  <!-- MAJOR CONTAINER ENDS -->
+  </div>
                                       <!-- FOOTER TIMER -->
                                       <!-- FOOTER TIMER -->
-
-<!-- Footer -->
+                        
 <footer class="new_footer_area bg_color">
   <div class="new_footer_top">
       <div class="container">
@@ -447,17 +440,56 @@
   </div>
 
 </footer>
-
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-      <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-      <script src="/node_modules/popper.js/dist/popper.min.js"></script>
-      <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
-      <script src="/js/navbarJs.js"></script>
-
-
-
+                                        <!-- TOOLTIPS -->
+                                        <!-- TOOLTIPS -->   
+<script>
+  $(function(){
+    $("[data-toggle='tooltip']").tooltip();
+    $("[data-toggle='popover']").popover();
+    $('.carousel').carousel({
+      interval:500
+    });
+    
+  });
+</script>
+                                      <!-- MODAL -->
+  
+  <div class="modal fade" id="Reserva" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   
+    <div class="modal-dialog">
+     
+      <div class="modal-content">
+        
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Envianos tu Reserva !</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+  
+        <div class="modal-body col-form-label badge badge-warning ">
+          <form>
+  
+            <div class="form-group ">
+              <label for="recipient-name" class="col-form-label badge badge-warning"><h7>Nombre y Apellido</h7></label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+  
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">E-mail</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Message:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+  
+          
+          </form>
+        </div>
+  
+      </div>
+    </div>
+  </div>
 </body>
-
-
 </html>
