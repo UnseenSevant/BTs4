@@ -25,9 +25,42 @@ $(window).on("scroll", function() {
   $(function(){
     $("[data-toggle='tooltip']").tooltip();
     $("[data-toggle='popover']").popover();
-    $('.carousel').carousel({
-      interval:1000
+    
+    $('#carouselExampleFade').carousel({
+      interval:600
     });
+    
+       /* MODAL COUTER */
+  
+
+      $(window).on('show.bs.modal', function (e) {
+        console.log('el modal se esta mostrando');
+
+        $("#reservaModal").removeClass('btn-reserva');
+        $("#reservaModal").addClass('btn-warning');
+        $("#reservaModal").prop('disabled',true); 
+      });
+
+      $(window).on('hide.bs.modal', function (e) {
+            console.log('el modal se esta esconcdiendo');
+
+      });
+
+      $(window).on('shown.bs.modal', function (e) {
+            console.log('el modal se esta mostro');
+      });
+
+     
+
+      $(window).on('hidden.bs.modal', function (e) {
+            console.log('el modal se escondio');
+
+            });
+
+      
+         
+
+
 
   });
 
