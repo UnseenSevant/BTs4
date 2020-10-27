@@ -112,6 +112,13 @@ nav ul {
   padding-right: 40px;
   transition: 2s; }
 
+.d-block {
+  max-height: 100px; }
+
+#navAnim {
+  opacity: 0.12;
+  background-color: 0; }
+
 .nav-scrolled {
   background-color: #fdfd88;
   height: 22%;
