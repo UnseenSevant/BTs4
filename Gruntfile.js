@@ -17,6 +17,7 @@ module.exports = function(grunt){
   require('time-grunt')(grunt)
   require('jit-grunt')(grunt,{
     useminPrepare:'grunt-usemin'
+  
   });
 
                 /* holaMundoodnuMaloH */
@@ -111,36 +112,70 @@ filrerev:{
   }
 }, 
 
+concat:{
+  options:{
+    separator:';'
+  },
+  dist:{}
+},
 
+ useminPrepare:{
 
+  foo:{
+    dest:'dist',
+    src:['index.html','about.html','precios.html','contacto.html']
+  },
+  options:{
+    flow:{
+      steps:{
+        css:['cssmin'],
+        js:['uglify']
+      },
+      post:{
+        css:[{
+          name:'cssmin',
+          createConfig:function(context,block){
+            var genereted = context.options.generated;
+            genereted.options={
+              keepSocialComments:0,
+              rebase:false
+            }
+          }
+        }]
+      }
+    }
+  }
+},
 
+usemin:{
+  html:['index.html','about.html','precios.html','contacto.html'],
+  opstions:{
+    assetsDir:['dist','dist/css','dist/js']
+  }
+}
+   
 
   });
 
-                /* ASIGNAR TAREA A NPM */
-    grunt.loadNpmTasks('grunt-browser-sync');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-imagemin');
-    grunt.loadNpmTasks('grunt-contrib-sass');
-    /* CONTRIB COPY */
-    grunt.loadNpmTasks('grunt-contrib-copy');
-    /* CONTRIB CLEAN */
-    grunt.loadNpmTasks('grunt-contrib-clean');
-    /* CONTRIB CONCAT */     
-    grunt.loadNpmTasks('grunt-contrib-concat');
-    /* CONTRIB CSSMIN */     
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
-    /* CONTRIB uglify */  
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    /* CONTRIB filerev */  
-    grunt.loadNpmTasks('grunt-contrib-filerev');
-
-
+  
 
       /* NOMBRAR Y EJECUTAR TAREA EN NPM */
     grunt.registerTask('css',['sass']);
     grunt.registerTask('img:compres',['imagemin']);
     grunt.registerTask('tortafrita',['browserSync','watch']);
+    grunt.registerTask('build',[
+      'clean',
+      'copy',
+      'imagemin',
+      'useminPrepare',
+      'concat',
+      'uglify',
+      'filerev',
+      'usemin',
+      'cssmin'
+    
+
+    ]);
     
 
 };
