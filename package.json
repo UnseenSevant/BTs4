@@ -36,6 +36,8 @@
     "grunt-contrib-uglify": "^5.0.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-filerev": "^2.3.1",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "htmlmin": "0.0.7",
     "jit-grunt": "^0.10.0",
     "lite-server": "^2.5.4",
